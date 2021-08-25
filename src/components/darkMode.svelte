@@ -2,14 +2,6 @@
   import { onMount, afterUpdate, onDestroy } from "svelte";
   import { darkmode } from "../../scripts/store";
 
-  onMount(() => {
-    console.log($darkmode);
-  });
-
-  afterUpdate(() => {
-    console.log($darkmode);
-  });
-
   const updateMode = () => {
     darkmode.update((m) => !!!m);
     localStorage.setItem("darkmode", $darkmode)

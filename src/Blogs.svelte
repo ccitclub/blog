@@ -20,7 +20,6 @@
     const data = await getBlogPosts(params?.id);
     Posts = data.posts;
     lastPost = data.lastPost;
-    console.log(Posts[0]);
   });
 
   onDestroy(() => {

@@ -17,7 +17,6 @@
 
   afterUpdate(() => {
     loggedInUser = $currentUser;
-    console.log($currentUser);
   });
 
   let page;
