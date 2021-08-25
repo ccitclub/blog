@@ -8,7 +8,6 @@ export let loggedInUser;
 
 </script>
 
-<Metas/>
 <Heading {loggedInUser}/>
 <section class="blog_container">
     <BlogsTitle />

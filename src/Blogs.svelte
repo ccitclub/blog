@@ -40,7 +40,6 @@
   };
 </script>
 
-<Metas />
 {#await getBlogCategoryDetail(params?.id)}
   <div style="margin: 0 auto; display: grid; justify-content: center;">
     <LoadingIcon className="icon" style="background: #b20000" />
