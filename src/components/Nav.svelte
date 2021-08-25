@@ -10,7 +10,7 @@ export let showBgColor = "";
 
 <nav class="mode">
     <h1 class="nav--brand">
-        <a href="/">
+        <a href={domain}>
         { #if logo }
         <img style="max-height: 60px;" src={logo} alt="Logo"/>            
         {/if}
