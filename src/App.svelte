@@ -9,6 +9,7 @@
   import { darkmode } from "../scripts/store";
   import Blogs from "./Blogs.svelte";
   import Modal from "./components/Modal.svelte";
+import Metas from "./components/Metas.svelte";
 
   let loggedInUser;
   onMount(async () => {
@@ -43,6 +44,7 @@
   router.start();
 </script>
 
+<Metas/>
 <main style={$darkmode ? "background: #232323; color: white" : ""}>
   <Nav />
   <header class="pt-80px text-center"><h1 class="py-1">BLOGS</h1></header>
